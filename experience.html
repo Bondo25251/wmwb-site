@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en" class="xp-root">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Experience — What Might We Become?</title>
+<meta name="description" content="An interactive piece for What Might We Become? by Elias Toma: three short acts, a glyph made from your answers, and a question returned to you. Nothing you type leaves your browser.">
+<link rel="canonical" href="https://whatmightwebecome.com/experience.html">
+<meta name="theme-color" content="#030407">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="What Might We Become?">
+<meta property="og:title" content="The Experience — What Might We Become?">
+<meta property="og:description" content="Three short acts, a glyph made from your answers, and a question returned to you. Nothing you type leaves your browser.">
+<meta property="og:url" content="https://whatmightwebecome.com/experience.html">
+<meta property="og:image" content="https://whatmightwebecome.com/assets/og_1200x630.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Cover of What Might We Become? by Elias Toma">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The Experience — What Might We Become?">
+<meta name="twitter:description" content="Three short acts, a glyph made from your answers, and a question returned to you.">
+<meta name="twitter:image" content="https://whatmightwebecome.com/assets/og_1200x630.jpg">
+<link rel="icon" type="image/png" sizes="64x64" href="assets/seal_64.png">
+<link rel="icon" type="image/png" sizes="180x180" href="assets/seal_180.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/seal_180.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="xp">
+<canvas id="field" class="xp-field" aria-hidden="true"></canvas>
+<div class="xp-grain" aria-hidden="true"></div>
+<div id="progress" class="xp-progress" aria-hidden="true"></div>
+
+<header class="xp-head">
+  <a class="brand" href="index.html">What Might We Become?</a>
+  <nav class="nav" aria-label="Site">
+    <a href="index.html">The book</a>
+    <a href="experience.html" aria-current="page">Experience</a>
+    <a href="opening.html">Read the opening</a>
+  </nav>
+</header>
+
+<main id="top">
+  <section class="threshold" data-act="threshold" aria-labelledby="xp-title">
+    <div style="max-width:1100px">
+      <div id="move" class="move" aria-live="polite">Move.</div>
+      <h1 id="xp-title">What Might We Become?</h1>
+      <p class="tagline">An answer arrives. What returns with it?</p>
+      <div class="actions">
+        <a class="xbtn xbtn--solid" href="#loop">Enter the experience</a>
+        <a class="xbtn" href="index.html">See the book</a>
+      </div>
+      <p class="hint">The faint line guesses where your pointer is going. Nothing leaves this device.</p>
+    </div>
+  </section>
+
+  <section id="loop" data-act="loop" aria-labelledby="h-loop">
+    <div class="inner">
+      <div class="kicker kicker--a">I · The Loop</div>
+      <h2 id="h-loop">The work comes back.</h2>
+      <p class="lead">We make tools. They outlast us and change the people who decide what to make next.</p>
+      <div class="qs">
+        <div class="q">
+          <h3 id="q-entry">Where does AI enter your life?</h3>
+          <div class="chips" role="group" aria-labelledby="q-entry" data-chips="entry"></div>
+        </div>
+        <div class="q">
+          <h3 id="q-change">What has changed?</h3>
+          <div class="chips" role="group" aria-labelledby="q-change" data-chips="change"></div>
+        </div>
+        <div class="q">
+          <h3 id="q-difficult">What do you want to remain difficult?</h3>
+          <textarea id="difficult" aria-labelledby="q-difficult" placeholder="Type freely. It stays in this browser."></textarea>
+        </div>
+        <p class="hint" style="margin-top:0">Your answers shape the glyph at the end. Nothing is sent anywhere.</p>
+      </div>
+    </div>
+  </section>
+
+  <section data-act="under" aria-labelledby="h-under">
+    <div class="inner">
+      <div class="kicker kicker--b">II · Under the Loop</div>
+      <h2 id="h-under">The surface opens.</h2>
+      <p class="lead">A response can look private while its conditions are set elsewhere.</p>
+      <div id="lens" class="lens" tabindex="0" role="img" aria-label="A panel reading ‘A person reviewed this decision.’ Drag, or use the arrow keys, to move a lens that reveals what lies underneath: which evidence was selected, how many cases arrived that day, whether the reviewer could delay or refuse, and who bears the work of appeal. A signature is not the same as judgement.">
+        <p class="lens-top">A person reviewed this decision.</p>
+        <div id="under" class="lens-under" aria-hidden="true"><b>THE APPROVAL SURFACE</b><br><br>Which evidence was selected?<br>How many cases arrived that day?<br>Could the reviewer delay?<br>Could they refuse without penalty?<br>Who bears the work of appeal?<br><br><b>A SIGNATURE IS NOT THE SAME AS JUDGEMENT.</b></div>
+        <div id="drag-chip" class="drag-chip" aria-hidden="true">Drag to look underneath</div>
+      </div>
+    </div>
+  </section>
+
+  <section data-act="futures" aria-labelledby="h-futures">
+    <div class="inner inner--wide">
+      <div class="kicker kicker--c">III · What We Might Become</div>
+      <h2 id="h-futures">The stories inside.</h2>
+      <p class="lead" style="max-width:28ch">Between its questions the book keeps stopping for stories: a jazz stage, a Martian winter, a Prague attic.</p>
+      <div class="stories">
+        <article class="story"><small>Interlude · Part I</small><h3>The Turing Test, Reversed</h3><p>Its task is to decide whether you are human. Yours is to prove you are.</p></article>
+        <article class="story"><small>Interlude · Part II</small><h3>The Wrong Chord</h3><p>Herbie Hancock plays a chord he knows is wrong. Miles Davis answers, and makes it right.</p></article>
+        <article class="story"><small>Interlude · Part II</small><h3>The Last Words</h3><p>The world mourned a Mars rover with a dying sentence it never sent, and preferred it to the data.</p></article>
+        <article class="story"><small>Interlude · Part II</small><h3>The Bell</h3><p>Long before anyone built a machine that could hold a conversation, someone built one that told people what to do.</p></article>
+        <article class="story"><small>Interlude · Part III</small><h3>For All People, For All Time</h3><p>The metre: a measure meant to owe nothing to a king’s foot or a town’s custom.</p></article>
+        <article class="story"><small>Interlude · Part III</small><h3>The Guilty Object</h3><p>Falaise, 1386. A sow on trial for a death, with a judge, a record, and costs.</p></article>
+        <article class="story"><small>Interlude · Part IV</small><h3>The Letter Removed</h3><p>Erase one letter and truth becomes death. The golem’s biography was a golem.</p></article>
+        <article class="story story--end"><small>Part V · What We Might Become</small><h3>Voices from the Archive</h3><p>Seven writers, from a Chinese wheelwright to an enslaved American teaching himself to read. “A book about a voice compressed from a human inheritance owes that inheritance some uncompressed time.”</p></article>
+      </div>
+      <p class="hint" style="margin-top:20px">The book’s seven interludes, and where it ends.</p>
+    </div>
+  </section>
+
+  <section id="return" data-act="return" aria-labelledby="h-return">
+    <div class="return">
+      <canvas id="glyph" class="glyph" width="700" height="700" role="img" aria-label="A glyph generated from this visit"></canvas>
+      <div class="return-text">
+        <div class="kicker kicker--c">The question returns</div>
+        <h2 id="h-return" class="question" aria-live="polite">What are we to each other?</h2>
+        <p class="note">Every chapter of the book is a question. These are theirs, returned to you. Nothing you typed leaves this page.</p>
+        <div class="actions" style="margin-top:0">
+          <button id="regen" type="button" class="xbtn xbtn--solid">Return another question</button>
+          <a class="xbtn" href="index.html">Read the book</a>
+          <a class="xbtn" href="opening.html">Read the opening</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer id="book" class="xp-foot">
+  <a href="index.html" aria-label="The book page">
+    <img src="assets/cover_480.jpg" width="190" height="285"  decoding="async" alt="Cover of What Might We Become? by Elias Toma">
+  </a>
+  <div class="ft">
+    <p class="label">The book</p>
+    <h2>What Might We Become?</h2>
+    <p class="sub">Artificial Intelligence and the Questions it Returns to Us</p>
+    <p class="author" style="font-family:var(--mono);font-size:12px;letter-spacing:.18em;text-transform:uppercase;margin:0 0 18px">Elias Toma · Seventeen chapters, seven interludes</p>
+    <p class="status" data-status>Pre-order; released 14 December 2026</p>
+    <p class="status-note" data-status-note>Forthcoming. eBook available for pre-order on Amazon; print editions follow on release day.</p>
+    <div class="retailers" data-retailers>
+      <span class="btn btn--soon" aria-disabled="true">Amazon (Kindle pre-order) <span class="tag">soon</span></span>
+      <span class="btn btn--soon" aria-disabled="true">Amazon paperback <span class="tag">soon</span></span>
+      <span class="btn btn--soon" aria-disabled="true">Amazon hardcover <span class="tag">soon</span></span>
+      <span class="btn btn--soon" aria-disabled="true">Barnes &amp; Noble <span class="tag">soon</span></span>
+      <span class="btn btn--soon" aria-disabled="true">Kobo <span class="tag">soon</span></span>
+      <span class="btn btn--soon" aria-disabled="true">Apple Books <span class="tag">soon</span></span>
+      <span class="btn btn--soon" aria-disabled="true">Bookshop.org <span class="tag">soon</span></span>
+    </div>
+    <div class="actions" style="margin-top:14px">
+      <a class="btn" href="index.html">The book page</a>
+      <a class="btn" href="opening.html">Read the opening</a>
+    </div>
+  </div>
+  <p class="small">© 2026 Elias Toma · <span data-contact hidden><a href="#">Contact</a></span></p>
+</footer>
+<script src="config.js"></script>
+<script src="site.js"></script>
+<script src="experience.js"></script>
+</body>
+</html>
