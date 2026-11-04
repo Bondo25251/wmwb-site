@@ -10,6 +10,6 @@ window.WMWB = {
     { name: "Apple Books", url: "", enabled: false },
     { name: "Bookshop.org", url: "", enabled: false }
   ],
-  contactEmail: "",           // leave empty to hide the contact line
+  contactEmail: "hello@whatmightwebecome.com",   // forwards to elias@; leave empty to hide the contact line
   siteUrl: "https://whatmightwebecome.com"   // canonical/OG/sitemap
 };
